@@ -128,7 +128,8 @@ body {
   font-family: impact;
   font-size: 60px;
   letter-spacing: 4px;
-  color: white;  
+  color: white; 
+  margin-right: 500px;
 } 
 
 span{
