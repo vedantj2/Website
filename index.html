@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-------------TOP BORDER--------------------->
+    <div class="border"></div>
+    <!-----------NAVIGATION BAR START------------->
+    <section class="first-face">
+        <div class="container">
+                <div class="navigation-wrapper">
+                    <div class="navigation-button">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="navigation-menu">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">PROJECTS</a></li>
+                            <li><a href="">SOCIALS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="hero">
+                    <h1>HI, <br>  it's Vedant</h1>
+                    <span style="color: white;">I'm a Computing Science student at <a href="https://www.sfu.ca/" class="sfu-link">Simon Fraser University</a></spans>
+                </section>
+                
+        </div>
+    </section>
+
+    <section class="second-face">
+        <div class="about-title"><h1 class="about-title-h">ABOUT</h1></div>
+        <br>
+        <div class="sticky-wrapper">
+            <div class="element-wrapper">
+              <div class="element"><p class="first-about">I was born in Pune, India</p></div>
+              <div class="element2"><p class="first-about">I Moved from city to city in india </p></div>
+              <div class="element3"><p class="first-about">I came back to Pune in 10th Grade</p></div>
+              <div class="element4"><p class="first-about">I completed my Secondary school and highschool from MIT-Vishwashanti gurukul pune</p></div>
+              <div class="element"><p class="first-about">I decided to persue my passion, and stude Computing Science </p></div>
+              <div class="element2"><p class="first-about">I got Aceepted in Simon Fraser University Canada</p></div>
+              <div class="element3"><p class="first-about">I Moved to Canada In 2021, July</p></div>
+              <div class="element4"><p class="first-about">I am currently Living in Burnaby, Canada</p></div>
+            </div>
+          </div>
+    </section>
+
+    <section class="third-face">
+        
+    </section>
+
+    <script>
+        var windowWidth = window.innerWidth;
+
+        var horLength = document.querySelector(".element-wrapper").scrollWidth;
+
+
+        var distFromTop = document.querySelector(".second-face").offsetTop;
+
+
+        var scrollDistance = distFromTop + horLength - windowWidth;
+
+
+        document.querySelector(".second-face").style.height = horLength + "px";
+
+
+        window.onscroll = function(){
+        var scrollTop = window.pageYOffset;
+        
+        if (scrollTop >= distFromTop && scrollTop <= scrollDistance) {
+            document.querySelector(".element-wrapper").style.transform = "translateX(-"+(scrollTop - distFromTop)+"px)";
+        }
+        }
+    </script>
+    <script>
+          var navButton = document.querySelector('.navigation-button');
+      var navMenu = document.querySelector('.navigation-menu');
+      var win = window;
+      
+      function openMenu(event) {
+        
+        navButton.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+        
+      function closeMenu(event) {
+        if (navButton.classList.contains('active')) {
+          navButton.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      }
+        navButton.addEventListener('click', openMenu, false);
+          
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+$highlight1: #B6FFCE;
+$highlight2: #F6FFA4;
+$highlight3: #FDD7AA;
+$highlight4: #FFA8A8;
+
+
+.border{
+    height: 6px;
+    border: 0;
+    background-color: $highlight1;
+    background-image:
+        linear-gradient(
+            to right,
+            $highlight1,
+            $highlight1 25%,
+            $highlight2 25%,
+            $highlight2 50%,
+            $highlight3 50%,
+            $highlight3 75%,
+            $highlight4 75%,
+            $highlight4 100%,
+            $highlight4 100%,
+        );
+    -webkit-background-size: 50% 100%;
+    -moz-background-size: 50% 100%;
+    background-size: 50% 100%; 
+}
