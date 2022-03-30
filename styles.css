@@ -284,3 +284,7 @@ span{
 .third-face{
   height: 100vh;
 }
+
+#india{
+  background-image: url(img/indiaMap.png);
+}
