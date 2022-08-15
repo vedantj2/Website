@@ -191,6 +191,8 @@ span{
   text-align: center;
   font-size: 30px;
   color: #000;
+  margin: auto;
+  width: 50%;
 }
 
 .element4 {
