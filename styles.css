@@ -188,6 +188,9 @@ span{
   background-color: #FDD7AA;
   margin: 0 20px 0 0;
   flex-shrink: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #000;
 }
 
 .element4 {
