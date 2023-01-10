@@ -40,23 +40,6 @@
 
         <h3 style="color: white; font-size: 50px;">WEBSITE UNDER DEVELOPMENT</h3>
     </section>
-
-    <script>
-        var windowWidth = window.innerWidth;
-        var horLength = document.querySelector(".element-wrapper").scrollWidth;
-        var distFromTop = document.querySelector(".second-face").offsetTop;
-        var scrollDistance = distFromTop + horLength - windowWidth;
-        document.querySelector(".second-face").style.height = horLength + "px";
-        window.onscroll = function()
-        {
-            var scrollTop = window.pageYOffset;
-            
-            if (scrollTop >= distFromTop && scrollTop <= scrollDistance) 
-            {
-                document.querySelector(".element-wrapper").style.transform = "translateX(-"+(scrollTop - distFromTop)+"px)";
-            }
-        }
-    </script>
     <script>
           var navButton = document.querySelector('.navigation-button');
       var navMenu = document.querySelector('.navigation-menu');
