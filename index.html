@@ -35,42 +35,34 @@
                 </section>
         </div>
     </section>
-
     <section class="second-face">
         <div class="about-title"><h1 class="about-title-h" id="about-title-anchor">ABOUT</h1></div>
         <br>
           <div class="sticky-wrapper">
             <div class="element-wrapper">
-                <div class="element3"><p class="first-about">I was born in Pune, India</p></div>
-                <div class="element3" id="india"><p class="first-about">I Moved from city to city in india </p></div>
-                <div class="element3"><p class="first-about">I came back to Pune in 10th Grade</p></div>
-                <div class="element3"><p class="first-about">I completed my Secondary school and highschool from MIT-Vishwashanti gurukul pune</p></div>
-                <div class="element3"><p class="first-about">I decided to persue my passion, and stude Computing Science </p></div>
-                <div class="element3"><p class="first-about">I got Aceepted in Simon Fraser University Canada</p></div>
-                <div class="element3"><p class="first-about">I Moved to Canada In 2021, July</p></div>
-                <div class="element3"><p class="first-about">I am currently Living in Burnaby, Canada</p></div>
+              <div class="element"><p class="first-about">I was born in Pune, India</p></div>
+              <div class="element2" id="india"><p class="first-about">I Moved from city to city in india </p></div>
+              <div class="element3"><p class="first-about">I came back to Pune in 10th Grade</p></div>
+              <div class="element4"><p class="first-about">I completed my Secondary school and highschool from MIT-Vishwashanti gurukul pune</p></div>
+              <div class="element"><p class="first-about">I decided to persue my passion, and stude Computing Science </p></div>
+              <div class="element2"><p class="first-about">I got Aceepted in Simon Fraser University Canada</p></div>
+              <div class="element3"><p class="first-about">I Moved to Canada In 2021, July</p></div>
+              <div class="element4"><p class="first-about">I am currently Living in Burnaby, Canada</p></div>
+            </div>
           </div>
     </section>
 
     <section class="third-face">
+
         <h3 style="color: white; font-size: 50px;">WEBSITE UNDER DEVELOPMENT</h3>
     </section>
 
     <script>
         var windowWidth = window.innerWidth;
-
         var horLength = document.querySelector(".element-wrapper").scrollWidth;
-
-
         var distFromTop = document.querySelector(".second-face").offsetTop;
-
-
         var scrollDistance = distFromTop + horLength - windowWidth;
-
-
         document.querySelector(".second-face").style.height = horLength + "px";
-
-
         window.onscroll = function()
         {
             var scrollTop = window.pageYOffset;
@@ -104,8 +96,5 @@
         navButton.addEventListener('click', openMenu, false);
           
     </script>
-
-
-
 </body>
 </html>
