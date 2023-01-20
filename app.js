@@ -7,8 +7,8 @@ const flightPath =  {
 const tween = new TimelineLite();
 
 tween.add(
-    Tweenlite.to('.paper-plane', 1, {
-        bazier: flightPath,
+    TweenLite.to('.paper-plane', 1, {
+        bezier: flightPath,
         ease: Power1.easeInOut
     })
 );
