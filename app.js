@@ -21,3 +21,16 @@ tween.add(
         ease: Power1.easeInOut
     })
 );
+
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.scene({
+    triggerElement: ".second-face",
+    duration: 1000,
+    triggerHook: 0
+})
+
+    .setTween(tween)
+    .addIndicatiors()
+    .setPin('.secon-face')
+    .addTo(controller); 
