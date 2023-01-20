@@ -24,13 +24,11 @@ tween.add(
 
 const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.scene({
+const scene = new ScrollMagic.Scene({
     triggerElement: ".second-face",
-    duration: 1000,
+    duration: 2500,
     triggerHook: 0
 })
-
-    .setTween(tween)
-    .addIndicatiors()
-    .setPin('.secon-face')
-    .addTo(controller); 
+.setTween(tween)
+.setPin('.second-face')
+.addTo(controller);
