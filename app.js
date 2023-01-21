@@ -1,9 +1,11 @@
 const flightPath =  {
-    curviness: 1.25,
+    curviness: 0.50,
     autoRotate: true,
     values: [
         {x:1400, y:0},
         {x:1000, y:20},
+        {x:0, y:30},
+        {x:200, y:35}
       
         // {x:window.innerWidth, y:-200},
     ]
@@ -28,3 +30,5 @@ const scene = new ScrollMagic.Scene({
 .setTween(tween)
 .setPin('.second-face')
 .addTo(controller);
+
+

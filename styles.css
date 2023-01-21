@@ -215,3 +215,7 @@ span{
 body::-webkit-scrollbar {
   display: none;
 }
+
+#images-about{
+  background-color: #B6FFCE;
+}
