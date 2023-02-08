@@ -5,9 +5,9 @@ const flightPath =  {
         {x:1400, y:0},
         {x:1000, y:20},
         {x:0, y:30},
-        {x:200, y:35}
+        {x:200, y:35},
       
-        // {x:window.innerWidth, y:-200},
+        {x:window.innerWidth, y:-200}
     ]
 };
 
