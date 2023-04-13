@@ -62,6 +62,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 
+    <section class="third-face">
+        <h1 class="about">Skills</h1>
+        <br><br>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+        <div class="skillsBox"><h2>HTML</h2></div>
+    
+
+    <script>
+        const boxes = document.querySelectorAll('.skillsBox')
+        window.addEventListener('scroll', checkBoxes)
+            checkboxes()
+
+            function checkBoxes(){
+                const triggerBottom = window.innerHeight / 5 * 4
+                boxes.forEach(box =>{
+                    const boxTop = box.getBoundingClientRect().top
+                    if(boxTop < triggerBottom){
+                        box.classList.add('show')
+                    } else{
+                        box.classList.remove('show')
+                    }
+                })
+            }
+    </script>
+    </section>
 
 
     <script>
