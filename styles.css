@@ -308,19 +308,27 @@ h1 {
 }
 
 .skillsBox {
-  background-color: white;
   border: 2px solid #3b3b3b;
   color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
   transform: translateX(400%);
   transition: transform 0.4s ease;
+}
+
+.skillsBox:nth-child(even) {
+  background-color: white;
+}
+
+.skillsBox:nth-child(odd) {
+  background-color: black;
+  color: white;
 }
 
 .skillsBox:nth-of-type(even) {
