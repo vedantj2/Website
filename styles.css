@@ -20,102 +20,6 @@ body {
   top: 40px;
   margin: 0 auto;
 }
-.navigation-wrapper {
-  position: relative;
-}
-.navigation-button {
-  will-change: transform;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 3;
-  top: 40px;
-  right: 100px;
-  background: transparent;
-  cursor: pointer;
-}
-.navigation-button .fa {
-  border: 2px solid white;
-  border-radius: 3px;
-  padding: 10px;
-    color: white;
-}
- 
-.navigation-menu ul li {
-  list-style: none;
-  font-family: impact;
-  font-weight: 300;
-  color: hsl(0,0%,70%);
-}
-.navigation-menu {
-  content: '';
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  background: #FFA8A8;
-  height: 100%;
-  transform: skewX(0deg) translate(100%,0);
-  transform-origin: top right;
-  transition: all .2s ease-in;
-  z-index: 2;
-}
-.navigation-menu ul {
-  transform: skewX(-8deg);
-  transform-origin: top left;
-  position: fixed;
-  right: 120px;
-  top: 120px;
-  width: 400px;
-  text-align: right;
-}
-.navigation-menu ul li {
-  position: relative;
-  z-index: 999;
-  font-size: 32px;
-  color: hsl(0,0%,10%);
-  line-height: 64px;
-}
-.navigation-menu ul li  a {
-  border: none;
-  color: hsl(0,0%,10%);
-  text-decoration: none;
-}
-.navigation-menu.active {
-  transform: skewX(8deg) translate(0,0);
-    
-}
-.navigation-menu li {
-  opacity: 0;
-  transform: translate(0, 10px);
-  transition: all .0s ease-in .3s;
-  
-}
-.navigation-menu.active li {
-  opacity: 1;
-  transform: translate(0,0);
-  transition: all .2s ease-in 0s;
-}
-.navigation-menu.active li:nth-child(1) {
-  transition-delay: .3s;
-}
-.navigation-menu.active li:nth-child(2) {
-  transition-delay: .4s;
-}
-.navigation-menu.active li:nth-child(3) {
-  transition-delay: .5s;
-}
-.navigation-menu.active li:nth-child(4) {
-  transition-delay: .6s;
-}
-.navigation-menu.active li:nth-child(5) {
-  transition-delay: .7s;
-}
-.navigation-menu.active li:nth-child(6) {
-  transition-delay: .8s;
-}
 .hero h1{  
   margin-top: 178px;
   text-transform: uppercase;
@@ -184,112 +88,8 @@ span{
   color: #FFA8A8;
 }
 
-.second-face{
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.paper-plane{
-  height: 100px;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-}
-
-.about{
-  text-transform: uppercase;
-  font-family: impact;
-  font-size: 60px;
-  letter-spacing: 4px;
-  color: white; 
-  text-align: center;
-}
-
 body::-webkit-scrollbar {
   display: none;
-}
-
-#images-about{
-  background-color: #B6FFCE;
-}
-
-.home{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background:url(./London.png);
-} 
-
-
-#image-track {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%); 
-  user-select: none; /* -- Prevent image highlighting -- */
-}
-
-#image-track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: 100% center;
-}
-
-/* -- YouTube Link Styles -- */
-
-body.menu-toggled > .meta-link > span {
-  color: rgb(30, 30, 30);
-}
-
-#source-link {
-  bottom: 60px;
-}
-
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-  color: rgb(239, 83, 80);
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  bottom: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 400ms, border-color 400ms;
-  z-index: 10000;
-}
-
-.meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.meta-link > i, .meta-link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
 }
 
 .third-face {
@@ -304,6 +104,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 h1 {
+  color: white;
   margin: 10px;
 }
 
@@ -342,4 +143,156 @@ h1 {
 .skillsBox h2 {
   font-size: 22px;
   font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+.active{
+color:white;
+}
+a:hover{
+  color:wheat;
+}
+header{
+  padding:0;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+
+/* Start of Header Styling*/
+.header {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height:70px;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow:auto;
+  background-color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 5px 30px;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0px;
+  font-size: 22px;
+  /* top:30px; */
+  margin-top: 10px;
+  transition: max-height .5s ease-out;
+  font-family: 'Space Grotesk';
+}
+.header .menu li button{
+  background-color: transparent;
+  border:none;
+  font-size: 22px;
+  font-family: 'Space Grotesk';
+  margin-right: 10px;
+  margin-top: 0;
+}
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 42px 30px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 25px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 340px;
+  background-image: linear-gradient(black,black);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 70em) {
+  .header h1{
+    font-size: 50px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu li button{
+    background-color: transparent;
+  }
 }
