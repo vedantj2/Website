@@ -396,3 +396,10 @@ stroke: #F6FFA4;
     opacity: 0;
   }
 }
+
+@media all and (max-width: 500px) {
+  body{
+    background-color: green;
+    width: 100%;
+  }
+}
